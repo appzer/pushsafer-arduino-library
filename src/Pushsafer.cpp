@@ -45,7 +45,7 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     // Optional Params
     if(input.device != "")
     {
-      start_request = start_request + buildString(boundary, "t", input.device);
+      start_request = start_request + buildString(boundary, "d", input.device);
     }
     if(input.sound != "")
     {
