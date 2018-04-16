@@ -41,9 +41,9 @@ void setup() {
   struct PushSaferInput input;
   input.message = "This is a test message";
   input.title = "Hello!";
-  input.sound = "8";
-  input.vibration = "1";
-  input.icon = "1";
+  input.sound = 8;
+  input.vibration = 1;
+  input.icon = 1;
   input.device = "a";
 
   // API description: https://www.pushsafer.com/en/pushapi
