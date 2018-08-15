@@ -35,10 +35,15 @@ struct PushSaferInput{
   String sound;
   String vibration;
   String icon;
+  String iconcolor;
   String device;
   String url;
   String urlTitle;
   String time2live;
+  String priority;
+  String retry;
+  String expire;
+  String answer;
   String picture;
   String picture2;
   String picture3;
