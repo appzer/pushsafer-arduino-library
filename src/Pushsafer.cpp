@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2017 Pushsafer.com Kevin Siml
+Copyright (c) 2018 Pushsafer.com Kevin Siml
 
 Pushsafer - Library to send Pushsafer notifications.
 Ref. Library at https:github/esp8266/Arduino
@@ -58,8 +58,11 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     if(input.icon != "")
     {
       start_request = start_request + buildString(boundary, "i", input.icon);
+    }  
+    if(input.iconcolor != "")
+    {
+      start_request = start_request + buildString(boundary, "c", input.iconcolor);
     }
-
     if(input.title != "")
     {
       start_request = start_request + buildString(boundary, "t", input.title);
@@ -75,6 +78,22 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     if(input.time2live != "")
     {
       start_request = start_request + buildString(boundary, "l", input.time2live);
+    }
+    if(input.priority != "")
+    {
+      start_request = start_request + buildString(boundary, "l", input.priority);
+    }
+    if(input.retry != "")
+    {
+      start_request = start_request + buildString(boundary, "l", input.retry);
+    }
+    if(input.expire != "")
+    {
+      start_request = start_request + buildString(boundary, "l", input.expire);
+    }
+    if(input.answer != "")
+    {
+      start_request = start_request + buildString(boundary, "l", input.answer);
     }
     if(input.picture != "")
     {
