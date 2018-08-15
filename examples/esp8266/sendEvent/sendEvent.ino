@@ -44,6 +44,8 @@ void setup() {
   input.sound = "8";
   input.vibration = "1";
   input.icon = "1";
+  input.iconcolor = "#FFCCCC";
+  input.priority = "1";
   input.device = "a";
 
   // API description: https://www.pushsafer.com/en/pushapi
@@ -54,6 +56,9 @@ void setup() {
   // input.picture2;
   // input.picture3;
   // input.time2live;
+  // input.retry;
+  // input.expire;
+  // input.answer;
 
   Serial.println(pushsafer.sendEvent(input));
   Serial.println("Sent");
