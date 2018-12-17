@@ -81,15 +81,15 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     }
     if(input.priority != "")
     {
-      start_request = start_request + buildString(boundary, "l", input.priority);
+      start_request = start_request + buildString(boundary, "pr", input.priority);
     }
     if(input.retry != "")
     {
-      start_request = start_request + buildString(boundary, "l", input.retry);
+      start_request = start_request + buildString(boundary, "re", input.retry);
     }
     if(input.expire != "")
     {
-      start_request = start_request + buildString(boundary, "l", input.expire);
+      start_request = start_request + buildString(boundary, "ex", input.expire);
     }
     if(input.answer != "")
     {
