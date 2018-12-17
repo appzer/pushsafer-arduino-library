@@ -93,7 +93,7 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     }
     if(input.answer != "")
     {
-      start_request = start_request + buildString(boundary, "l", input.answer);
+      start_request = start_request + buildString(boundary, "a", input.answer);
     }
     if(input.picture != "")
     {
