@@ -38,6 +38,9 @@ void setup() {
 
   pushsafer.debug = true;
 
+  // Take a look at the Pushsafer.com API at
+  // https://www.pushsafer.com/en/pushapi
+  
   struct PushSaferInput input;
   input.message = "This is a test message";
   input.title = "Hello!";
@@ -47,18 +50,15 @@ void setup() {
   input.iconcolor = "#FFCCCC";
   input.priority = "1";
   input.device = "a";
-
-  // API description: https://www.pushsafer.com/en/pushapi
-  // Other optional Options
-  // input.url;
-  // input.urlTitle;
-  // input.picture;
-  // input.picture2;
-  // input.picture3;
-  // input.time2live;
-  // input.retry;
-  // input.expire;
-  // input.answer;
+  input.url = "https://www.pushsafer.com";
+  input.urlTitle = "Open Pushsafer.com";
+  input.picture = "";
+  input.picture2 = "";
+  input.picture3 = "";
+  input.time2live = "";
+  input.retry = "";
+  input.expire = "";
+  input.answer = "";
 
   Serial.println(pushsafer.sendEvent(input));
   Serial.println("Sent");
