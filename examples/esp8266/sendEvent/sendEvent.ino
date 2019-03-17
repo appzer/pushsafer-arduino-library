@@ -1,5 +1,6 @@
 #include <ESP8266WiFi.h>
-#include <WiFiClientSecure.h>
+/*#include <WiFiClientSecure.h>*/
+#include <WiFiClient.h>
 #include <Pushsafer.h>
 
 // Initialize Wifi connection to the router
@@ -9,7 +10,8 @@ char password[] = "password"; // your network key
 // Pushsafer private or alias key
 #define PushsaferKey "XXXXXXXXXXXXX"
 
-WiFiClientSecure client;
+/*WiFiClientSecure client;*/
+WiFiClient client;
 Pushsafer pushsafer(PushsaferKey, client);
 
 void setup() {
