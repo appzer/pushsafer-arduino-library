@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018 Pushsafer.com Kevin Siml
+Copyright (c) 2019 Pushsafer.com Kevin Siml
 
 Pushsafer - Library to send Pushsafer notifications.
 Ref. Library at https:github/esp8266/Arduino
@@ -35,7 +35,7 @@ String Pushsafer::sendEvent(PushSaferInput input) {
   String boundary = "------------------------b8f610217e83e29b";
   /*if (client->connect(HOST, SSL_PORT)) {*/
   if (client->connect(HOST, PORT)) {
-    Serial.println("Connected");
+    if (debug) Serial.println("Connected");
     String start_request = "";
     String end_request = "";
 
@@ -136,7 +136,7 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     bool currentLineIsBlank = true;
     while (millis()-now<5000) {
       while (client->available()) {
-        Serial.println("response");
+        if (debug) Serial.println("response");
         char c = client->read();
         responseReceived=true;
 
@@ -162,16 +162,14 @@ String Pushsafer::sendEvent(PushSaferInput input) {
 
       if (responseReceived) {
         if (debug) {
-          Serial.println();
           Serial.println(body);
-          Serial.println();
         }
         break;
       }
       delay(10); //Feed watchdog
     }
   } else {
-    Serial.println("Not Connected");	
+    if (debug) Serial.println("Not Connected");	
   }
 
   return body;
