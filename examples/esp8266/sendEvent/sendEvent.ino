@@ -64,6 +64,8 @@ void setup() {
 
   Serial.println(pushsafer.sendEvent(input));
   Serial.println("Sent");
+  
+  // client.stop();
 }
 
 void loop() {
