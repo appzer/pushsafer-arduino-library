@@ -13,3 +13,5 @@ Pushsafer make it easy and safe to get push-notifications in real time on your
 Send pushsafer.com messages from the arduino to your Browser, Android, iOS or Windows device.
 
 [Here is an working example!](https://github.com/appzer/pushsafer-arduino-library/blob/master/examples/esp8266/sendEvent/sendEvent.ino)
+
+forked from [witnessmenow](https://github.com/witnessmenow) ... thanks a lot!
