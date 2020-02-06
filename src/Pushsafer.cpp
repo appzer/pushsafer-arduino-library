@@ -1,4 +1,5 @@
 /*
+Copyright (c) 2017 Brian Lough. All right reserved.
 Copyright (c) 2019 Pushsafer.com Kevin Siml
 
 Pushsafer - Library to send Pushsafer notifications.
