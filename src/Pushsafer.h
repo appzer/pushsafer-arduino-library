@@ -1,9 +1,9 @@
 /*
 Copyright (c) 2017 Brian Lough. All right reserved.
-Copyright (c) 2017 Pushsafer.com Kevin Siml. All right reserved.
+Maintained by Pushsafer.com (Kevin Siml)
 
 Pushsafer - Library to send Pushsafer notifications.
-Ref. Library at https:github/esp8266/Arduino
+Ref. Library at https://github.com/esp8266/Arduino
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
