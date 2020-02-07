@@ -1,6 +1,6 @@
 /*
 Copyright (c) 2017 Brian Lough. All right reserved.
-Copyright (c) 2019 Pushsafer.com Kevin Siml
+Maintained by Pushsafer.com (Kevin Siml)
 
 Pushsafer - Library to send Pushsafer notifications.
 Ref. Library at https:github/esp8266/Arduino
