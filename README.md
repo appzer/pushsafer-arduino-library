@@ -2,6 +2,8 @@
 
 Send [pushsafer.com](https://www.pushsafer.com) notifications from your Arduino
 
+Download: [https://github.com/appzer/pushsafer-arduino-library/](https://github.com/appzer/pushsafer-arduino-library/)
+
 Pushsafer make it easy and safe to get push-notifications in real time on your
 - Android device
 - iOS device (incl. iPhone, iPad, iPod Touch)
