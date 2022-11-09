@@ -131,7 +131,6 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     client->print(end_request);
     if (debug) Serial.print(end_request);
 
-    char c;
     now=millis();
     bool finishedHeaders = false;
     bool currentLineIsBlank = true;
