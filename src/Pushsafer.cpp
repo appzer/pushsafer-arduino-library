@@ -93,9 +93,21 @@ String Pushsafer::sendEvent(PushSaferInput input) {
     {
       start_request = start_request + buildString(boundary, "ex", input.expire);
     }
+    if(input.confirm != "")
+    {
+      start_request = start_request + buildString(boundary, "cr", input.confirm);
+    }
     if(input.answer != "")
     {
       start_request = start_request + buildString(boundary, "a", input.answer);
+    }
+    if(input.answeroptions != "")
+    {
+      start_request = start_request + buildString(boundary, "ao", input.answeroptions);
+    }
+    if(input.answerforce != "")
+    {
+      start_request = start_request + buildString(boundary, "af", input.answerforce);
     }
     if(input.picture != "")
     {
