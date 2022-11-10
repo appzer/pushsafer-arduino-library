@@ -60,7 +60,10 @@ void setup() {
   input.time2live = "";
   input.retry = "";
   input.expire = "";
+  input.confirm = "";
   input.answer = "";
+  input.answeroptions = "";
+  input.answerforce = "";
 
   Serial.println(pushsafer.sendEvent(input));
   Serial.println("Sent");
