@@ -45,7 +45,10 @@ struct PushSaferInput{
   String priority;
   String retry;
   String expire;
+  String confirm;
   String answer;
+  String answeroptions;
+  String answerforce;
   String picture;
   String picture2;
   String picture3;
